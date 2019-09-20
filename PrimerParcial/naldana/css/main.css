@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    /* distribuir el nav y el logo en le header  */
 }
 
 .src-only {
@@ -61,12 +61,14 @@ p{
     font-size: 1.6rem;
 }
 i.fas.fa-arrow-circle-down {
+    /* flecha para bajar la los post */
     font-size: -webkit-xxx-large;
     color:  #0AC693
    
 }
 fa, .fas {
     font-weight: 900;
+    /* tamaño de boton de flecha */
 }
 /* Big area */
 .big-hero img {
@@ -93,11 +95,12 @@ fa, .fas {
     margin-top: 3em;
     display: flex;
     justify-content: space-evenly;
+    /* distribucion de los social link */
 }
 .social-links i{
     height: 100%;
     width: 100%;
-
+/* tamaño de la imagen */
 
 }
 .social-links li a{
@@ -118,6 +121,7 @@ fa, .fas {
 .post {
     padding: 1em;
     margin-bottom: -2px;
+   
 }
 .post h2 {
     text-transform: uppercase;
@@ -175,7 +179,8 @@ margin-top: 2em;
 }
 .about .container{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns:50% 50%; 
+    /* distribucion del about en dos columnas */
 }
 .about h2 {
     text-transform: uppercase;
@@ -184,6 +189,8 @@ margin-top: 2em;
     margin: 2em;
     grid-column-start: 1;
     grid-column-end:3;
+
+    /* centrar el h2 */
 }
 
 .bio-info img{
@@ -262,6 +269,7 @@ footer .social-links {
     margin: 2em;
   display: flex;
   justify-content: space-evenly
+  /* espacido de los social link */
 }
 
 .menu {
@@ -284,6 +292,7 @@ footer .social-links {
 }
 .menu li {
     float: right;
+    /* ubicacion de los li */
 }
 
 .menu li a {
@@ -292,10 +301,11 @@ footer .social-links {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    /* centrar el texto a los contenedores */
 }
 .menu li a:hover {
     background-color:red;
-    
+/* color al hover del menu */    
 }
 
 
@@ -341,27 +351,67 @@ footer .social-links {
         margin-top: 1em;
         float: right;
     }
+    .container .about{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 
+} 
+/*ajuste para moviles */
+@media only screen and (max-width: 600px) {
 
+    .about{
+        display:-moz-inline-grid;
+        margin-top: 2em;
+      
+    }
+    
+    .about h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.125em;
+        margin: 2em;
+    }
+    
+    .bio-info img{
+       width: 200px;
+    }
+    
+    .bio-info p{
+        font-size: 16px;
+        padding: 2em;
+        text-align: left;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0px 1em;
+    }
+    
+    .contact * + * {
+        margin-top: 1.5em;
+    }
+    
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-form input, .contact-form textarea{
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0px 2em;
+        font-size: 1em;
+        width: 100%;
+    }
 
-
-    /*TODO: FALTA CSS */
 } 
 
-@media only screen and (min-width: 1024px) {
 
-       /*TODO: FALTA CSS */
-
-
-
-}
-
-@media only screen and (min-width: 1440px) {
-
-    /*TODO: FALTA CSS */
-    .container {
-        width: 80%;
-        margin: 0 auto;
-        max-width: 1440px;
-    }
-}
